@@ -17,4 +17,7 @@ my_fruit_list = pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/da
 
 st.dataframe(my_fruit_list)
 
+st.multiselect("Pick some fruits:", list(my_fruit_list.index))
+
+
 
