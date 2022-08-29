@@ -19,9 +19,9 @@ my_fruit_list.set_index('Fruit', inplace=True)
 
 st.text('Pick some fruits :)')
 
-st.multiselect("Pick some fruits:", list(my_fruit_list.index))
+fruits_selected = st.multiselect("Pick some fruits:", list(my_fruit_list.index))
 
-st.dataframe(my_fruit_list)
+st.dataframe(fruits_selected)
 
 
 
