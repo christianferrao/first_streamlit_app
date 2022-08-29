@@ -21,7 +21,9 @@ st.text('Pick some fruits :)')
 
 fruits_selected = st.multiselect("Pick some fruits:", list(my_fruit_list.index))
 
-st.dataframe(fruits_selected)
+fruist_to_show = my_fruit_list.loc[fruits_selected]
+
+st.dataframe(fruist_to_show)
 
 
 
